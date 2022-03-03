@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: var(--color-2);
+  color: var(--color-3);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: "Poppins", sans-serif;
+  background-image: var(--body);
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+}

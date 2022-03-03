@@ -1,0 +1,30 @@
+:root {
+  // COLORS
+  --body: linear-gradient(120deg, #49bcf6, #49deb2); //Neon Blue
+  --color-1: #fff;
+  --color-2: #ffffff2e;
+  --color-3: #c8aa01;
+  --shadow: 0 0.3rem 3rem rgba(0, 0, 0, 0.3);
+
+  // FONT SIZES
+  --font-size-big: 4rem;
+  --font-size-medium: 2rem;
+  --font-size-small: 1.4rem;
+  --font-size-smallest: 1.2rem;
+  --font-size-tiny: 1rem;
+}
+
+// RESPONSIVE MEDIA
+$bp-medium: 37em; //592px / 16px = 37em
+$bp-small: 26.75em; //428px / 16px = 26.75em
+$bp-tiny: 20em; // 320 / 16px = 20em
+
+@media only screen and (max-width: $bp-small) {
+  :root {
+    --font-size-big: 3rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+    --font-size-smallest: 1.2rem;
+    --font-size-tiny: 0.9rem;
+  }
+}

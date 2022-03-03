@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLING -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- BOX SCREEN -->
+      <div class="box">
+        <!-- SEARCH -->
+        <div class="box__search">
+          <form onsubmit="return false" class="search">
+            <input
+              class="search__input"
+              pattern="^[a-zA-Z]+$"
+              placeholder="Search by city name"
+              type="search"
+              id="search"
+            />
+            <button id="btn-search" class="search__button" type="submit">
+              <svg class="search__icon">
+                <use href="assets/img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+          <span id="error" class="box__error"></span>
+
+          <!-- LOCATION / DATE -->
+          <div class="box__handle">
+            <span id="city" class="box__location">City</span>
+            <span id="date" class="box__date">Date</span>
+          </div>
+        </div>
+        <!-- TEMPS -->
+        <div class="box__temperature">
+          <div id="temp" class="box__temp">
+            <h3 style="display: flex">
+              18 <span class="box__degree">&#8451;</span>
+            </h3>
+            <h3 style="display: flex">
+              64 <span class="box__fahrenheit">&#8457;</span>
+            </h3>
+          </div>
+          <div class="box__icon">
+            <img src="#" alt="" id="weatherIcon" />
+          </div>
+          <span id="weather" class="box__weather">Weather</span>
+          <div id="tempRange" class="box__range">
+            <span>10 &#8451; / 25 &#8451;</span>
+            <span>50 &#8457; / 77 &#8457;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
