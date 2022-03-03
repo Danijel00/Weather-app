@@ -1,6 +1,7 @@
 "Weather-app" 
 - BASIC WEATHER APP THAT SHOWS:
 - DATE, TIME, LOCATION, MIN/MAX TEMPS IN CELSIUS AND FAHRENHEIT
+- Built with HTML, SASS & JS with an API from openweathermap
 
 
 
