@@ -1,4 +1,5 @@
-"Weather-app" 
+- Weather app
+
 - BASIC WEATHER APP THAT SHOWS:
 - DATE, TIME, LOCATION, MIN/MAX TEMPS IN CELSIUS, AND FAHRENHEIT
 - Built with HTML, SASS & JavaScript with an API from openweathermap
